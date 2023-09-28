@@ -1,3 +1,3 @@
-# Automate Terraform with GitHub Actions
+# Azure DevOps
 
-This repo is a companion repo to the [Automate Terraform with GitHub Actions tutorial](https://developer.hashicorp.com/terraform/tutorials/automation/github-actions).
+This repo uses Terraform to configure Azure DevOps projects, repos, pipelines, etc. The execution is done using GitHub Actions, which will trigger the apply and plan operations in  Terraform Cloud.
