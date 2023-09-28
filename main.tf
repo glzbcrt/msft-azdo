@@ -14,3 +14,7 @@ resource "azuredevops_project" "devops" {
 resource "azuredevops_project" "dataops" {
   name       = "dataops"  
 }
+
+resource "azuredevops_project" "customers" {
+  name       = "customers"  
+}
