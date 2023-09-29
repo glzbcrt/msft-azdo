@@ -22,6 +22,8 @@ resource "azuredevops_serviceendpoint_azurerm" "dev" {
   service_endpoint_name                   = "dev"
   service_endpoint_authentication_scheme  = "ServicePrincipal"
   azurerm_spn_tenantid                    = var.tenantId
+  azurerm_subscription_id                 = var.subscriptionId
+  azurerm_subscription_name               = var.subscriptionName
 
   credentials {
     serviceprincipalid  = var.principalId
