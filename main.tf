@@ -30,3 +30,12 @@ resource "azuredevops_serviceendpoint_azurerm" "dev" {
     serviceprincipalkey = var.principalKey
   }  
 }
+
+resource "azuredevops_git_repository" "datafactory" {
+  project_id = azuredevops_project.dataops.id
+  name       = "datafactory"
+
+  initialization {
+    init_type = "Clean"
+  }
+}
