@@ -14,8 +14,7 @@ resource "azuredevops_project" "dataops" {
   work_item_template = "Agile"
   description        = "Assets used by the DataOps pipelines."
   features = {
-    "boards"    = "disabled"
-    "testplans" = "disabled"
+    "boards"    = "disabled"    
     "artifacts" = "disabled"
   }
 }
