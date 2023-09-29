@@ -39,3 +39,12 @@ resource "azuredevops_git_repository" "datafactory" {
     init_type = "Clean"
   }
 }
+
+resource "azuredevops_git_repository" "templates" {
+  project_id = azuredevops_project.dataops.id
+  name       = "templates"
+
+  initialization {
+    init_type = "Clean"
+  }
+}
