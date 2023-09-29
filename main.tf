@@ -13,10 +13,6 @@ resource "azuredevops_project" "dataops" {
   version_control    = "Git"
   work_item_template = "Agile"
   description        = "Assets used by the DataOps pipelines."
-  features = {
-    "boards"    = "disabled"    
-    "artifacts" = "disabled"
-  }
 }
 
 # Create a shared service connection to be used by several DataOps projects.
