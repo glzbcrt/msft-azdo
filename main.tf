@@ -6,15 +6,3 @@ terraform {
     }
   }
 }
-
-resource "azuredevops_project" "devops" {
-  name       = "DevOps"  
-}
-
-resource "azuredevops_project" "dataops" {
-  name       = "dataops"  
-}
-
-resource "azuredevops_project" "customers" {
-  name       = "customers"  
-}
